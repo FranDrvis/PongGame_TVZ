@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" prefHeight="582" prefWidth="1000.0"
+      xmlns="http://javafx.com/javafx/19" fx:controller="pong.example.ponggame.GameController">
+    <MenuBar>
+        <Menu mnemonicParsing="false" text="File">
+            <MenuItem mnemonicParsing="false" onAction="#handleNewGame" text="New Game"/>
+            <MenuItem mnemonicParsing="false" onAction="#handleSaveGame" text="Save Game"/>
+            <MenuItem mnemonicParsing="false" onAction="#handleLoadGame" text="Load Game"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Game">
+            <MenuItem mnemonicParsing="false" onAction="#handlePauseResumeGame" text="Pause/Resume"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+            <MenuItem mnemonicParsing="false" text="About"/>
+        </Menu>
+    </MenuBar>
+    <Canvas fx:id="gameCanvas" height="555.5" width="1000.0" VBox.vgrow="ALWAYS"/>
+</VBox>

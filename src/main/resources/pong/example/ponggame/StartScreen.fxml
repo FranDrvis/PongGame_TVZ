@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="360.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/19"
+      fx:controller="pong.example.ponggame.StartScreenController">
+    <Button fx:id="startButton" minHeight="120.0" minWidth="300.0" mnemonicParsing="false" onAction="#handleStartGame"
+            text="Start game">
+        <font>
+            <Font name="DejaVu Sans Bold" size="20.0"/>
+        </font>
+    </Button>
+    <Button fx:id="loadButton" minHeight="120.0" minWidth="300.0" mnemonicParsing="false" onAction="#handleLoadGame"
+            text="Load game">
+        <font>
+            <Font name="DejaVu Sans Bold" size="20.0"/>
+        </font>
+    </Button>
+    <Button fx:id="exitButton" minHeight="120.0" minWidth="300.0" mnemonicParsing="false" onAction="#handleExitGame"
+            text="Exit game">
+        <font>
+            <Font name="DejaVu Sans Bold" size="20.0"/>
+        </font>
+    </Button>
+</VBox>
